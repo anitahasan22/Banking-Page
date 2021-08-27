@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking PAGE</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex flex-col justify-center items-center">
+        <H1 class="text-6xl text-blue-400 text-center p-5">Banking Page</H1>
+        <h2 class="p-5">Smart Banking</h2>
+    </header>
+    <section class="mx-auto">
+        <div class="grid grid-cols-3 gap-4 m-5 sm:grid-col">
+            <div class="bg-yellow-100 rounded p-10 ">
+                <h3 class="text-xl">Deposit
+                </h3>
+                <h3  class="text-3xl ">$ <span id="deposit-total">00</span> 
+                </h3>
+            
+            </div>
+            <div class="bg-purple-300 rounded p-10">
+                <h3 class="text-xl">Withdraw
+                </h3>
+                <h3 class="text-3xl ">$ <span id="withdraw-total">00</span>
+                </h3>
+            
+            </div>
+            <div class="bg-pink-200 rounded p-10">
+                <h3 class="text-xl">Balance
+                </h3>
+                <h3 class="text-3xl ">$ <span id="balance-total">100</span> 
+                </h3>
+            
+            </div>
+
+        </div>
+    </section>
+    <section class="mx-auto">
+        <div class="grid grid-cols-2 gap-4 m-5 ">
+            <div class="bg-green-200 rounded p-10 ">
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-2xl" >Enter Deposit Money</h2>
+                    <input id="deposit-input" class="mt-5 mb-5 p-5" type="email" name="" id="" placeholder="Amount">
+                    <br>
+                    
+                    <button id="deposit-button" class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Deposit</button>
+                </div>
+            
+            </div>
+            <div class="bg-yellow-500 rounded p-10 ">
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-2xl" >Withdraw Money</h2>
+                    <input id="withdraw-input" class="mt-5 mb-5 p-5" type="email" name="" id="" placeholder="Amount">
+                    <br>
+                    
+                    <button id="withdraw-button" class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Withdraw</button>
+                </div>
+            
+            </div>
+           
+
+        </div>
+    </section>
+  <script src="DW.js"></script>
+</body>
+</html>
